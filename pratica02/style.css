@@ -1,0 +1,54 @@
+:root {
+    --tam-50-pixels: 50px;
+}
+
+body {
+    height: 2000px;
+}
+
+.div-exemplo {
+    background-color: brown;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border-style: solid;
+    border-color: dimgray;
+    margin: 5px;
+}
+
+.static {
+    position: static;
+    top: var(--tam-50-pixels);
+    left: var(--tam-50-pixels);
+}
+
+.relative {
+    position: relative;
+    top: var(--tam-50-pixels);
+    left: var(--tam-50-pixels);
+}
+
+.fixed {
+    position: fixed;
+    top: 100px;
+    left: 500px;
+}
+
+.absolute {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+
+}
+
+
+@media (max-width: 600px){
+    .static, .relative, .fixed, .absolute, .sticky{
+        position: static;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../vitrine/style.css">
+    <title>Vitrine</title>
+</head>
+<body>
+    <header>
+        <div class="div-logo">
+        <img src="../imagens/logo.svg" alt="Logo da empresa">
+        <h1>Minha empresa</h1>
+        </div>
+        <nav>
+            <ul class="lista-sem-estilo">
+                <a href="../sobre-nos/sobre-nos.html"><li>Sobre nós</li></a>
+                <a href="../vitrine/vitrine.html" class="selecionado"><li>Vitrine</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-produtos" aria-label="Seção produtos">
+            <h1>Produtos</h1>
+            <ul id="lista-produtos" class="lista-sem-estilo">
+                <li class="card">
+                    <div class="card-content">
+                        <img src="../imagens/camera.png" alt="Imagem de uma câmera">
+                        <h2 id="prod01">Produto 01</h2>
+                        <p>Lorem ipsum dolor Lorem ipsum dolor</p>
+                        <h3>Características</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Características</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Carac 01</td>
+                                    <td>Desc 01</td>
+                                </tr>
+                                <tr>
+                                    <td>Carac 02</td>
+                                    <td>Desc 02</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button onclick="adicionarOrcamento('Produto 01\r\nTamanho: \r\nCor: \r\nQuantidade: \r\n')"class="botao-primario"id="btnProd01" aria-labelledby="btnProd01 prod01">Adicionar ao orçamento</button>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <img src="../imagens/camera.png" alt="Imagem de uma câmera">
+                        <h2 id="prod02">Produto 02</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <h3>Características</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Características</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Carac 01</td>
+                                    <td>Desc 01</td>
+                                </tr>
+                                <tr>
+                                    <td>Carac 02</td>
+                                    <td>Desc 02</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button onclick="adicionarOrcamento('Produto 02\r\nTamanho: \r\nCor: \r\nQuantidade: \r\n')"class="botao-primario"id="btnProd02" aria-labelledby="btnProd02 prod02">Adicionar ao orçamento</button>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <img src="../imagens/camera.png" alt="Imagem de uma câmera">
+                        <h2 id="prod03">Produto 03</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <h3>Características</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Características</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Carac 01</td>
+                                    <td>Desc 01</td>
+                                </tr>
+                                <tr>
+                                    <td>Carac 02</td>
+                                    <td>Desc 02</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button onclick="adicionarOrcamento('Produto 03\r\nTamanho: \r\nCor: \r\nQuantidade: \r\n')"class="botao-primario"id="btnProd03" aria-labelledby="btnProd03 prod03">Adicionar ao orçamento</button>
+                </li>          
+            </ul>
+        </section>
+        <section id="section-orcamento" aria-label="Seção orçamentos">
+            <h1>Peça seu orçamento</h1>
+            <form>
+                <label for="inputNome">Nome</label>
+                <input type="text" id="inputNome">
+                <label for="textAreaMensagem">Descreva o que deseja orçar</label>
+                <textarea name="textAreaMensagem" id="textAreaMensagem"></textarea>
+            </form>
+            <button onclick="enviarOrcamento()" class="botao-primario">Pedir Orçamento</button>
+        </section>
+    </main>
+    <footer>
+        <p>Minicurso Front End Básico</p>
+    </footer>
+</body>
+<script src="vitrine.js"></script>
+</html>

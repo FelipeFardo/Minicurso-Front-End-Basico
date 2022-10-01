@@ -1,0 +1,145 @@
+:root {
+    --tam-font-P: 14px;
+    --tam-font-M: 16px;
+    --tam-font-G: 24px;
+
+    --tam-P: 8px;
+    --tam-M: 16px;
+    --tam-G: 24px;
+    --tam-GG: 32px;
+
+    --bg-color-header: rgb(20, 150, 201);
+    --bg-color-footer: #323232;
+    --bg-color-main: #EBEBEB;
+    --bg-color-card: white;
+    --font-color-header: white;
+    --font-color-footer: white;
+
+    --color-botao-primario: rgb(20, 150, 201);
+    --bg-color-botao-primario-ativado:rgb(11, 75, 100);
+    --font-color-botao-primario: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: var(--tam-font-G);
+    font-weight: bold;
+
+}
+
+h2 {
+    font-size: var(--tam-font-M);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: var(--tam-font-P);
+    font-weight: bold;
+}
+
+p, td, th {
+    font-size: var(--tam-font-P);
+}
+
+th {
+    font-weight: bold;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 90px auto 90px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+    gap: 0;
+}
+
+header {
+    grid-area: header;
+    padding: var(--tam-M) var(--tam-GG);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color-header);
+    color: var(--font-color-header);
+}
+
+main {
+    grid-area: main;
+    min-height: calc(100vh - 230px);
+    background-color: var(--bg-color-main);
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--bg-color-footer);
+    color: var(--font-color-header);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: var(--tam-GG);
+    font-weight: bold;
+}
+
+.div-logo {
+    display: flex;
+    align-items: center;
+}
+
+.div-logo > h1 {
+    margin-left: var(--tam-M);
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: var(--bg-color-card);
+}
+
+
+.lista-sem-estilo {
+    list-style: none;
+}
+
+.lista-sem-estilo > a {
+    text-decoration: none;
+    color: var(--font-color-header);
+    font-size: var(--tam-font-G);
+    font-weight: bold;
+    margin-left: var(--tam-M);
+}
+
+.selecionado {
+    border-bottom: solid var(--font-color-header);
+    border-width: 2px;
+}
+
+.botao-primario {
+    border-radius: 15px;
+    background-color: var(--color-botao-primario);
+    color: var(--font-color-botao-primario);
+    font-weight: bold;
+    padding: var(--tam-font-P);
+    border-color: transparent;
+    width: 100%;
+}
+
+.botao-primario:hover {
+    border: 2px solid black;
+}
+
+.botao-primario:active {
+    background-color: var(--bg-color-botao-primario-ativado);
+}
+

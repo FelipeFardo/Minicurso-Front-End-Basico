@@ -1,0 +1,113 @@
+:root {
+    --bg-color-orcamento: white;
+    --tam-w-img-produto: 250px;
+    --tam-h-img-produto: 250px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: "produtos orcamento";
+    gap: 0;
+}
+
+#section-produtos {
+    grid-area: produtos;
+    padding: var(--tam-M) var(--tam-GG);
+}
+
+#section-orcamento {
+    grid-area: orcamento;
+    background-color: var(--bg-color-orcamento);
+    padding: var(--tam-M) var(--tam-GG);
+
+}
+
+#section-produtos > h1 {
+    margin-bottom: var(--tam-M);
+}
+
+form > label {
+    display: block;
+    margin-top: var(--tam-M);
+}
+
+#inputNome {
+    width: 100%;
+    border-radius: 3px;
+}
+
+#textAreaMensagem {
+    width: 100%;
+    height: 200px;
+    margin-bottom: var(--tam-M);
+    border-radius: 3px;
+}
+
+.card {
+    margin: 0 var(--tam-G) var(--tam-G) 0;
+    padding: var(--tam-M);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+
+.card > div > img {
+    width: var(--tam-w-img-produto);
+    height: var(--tam-h-img-produto);
+    background-color: #bfbfbf;
+}
+
+.card > div > h2 {
+    margin-top: var(--tam-M);
+    margin-bottom: var(--tam-M);
+}
+
+.card > div > h3 {
+    margin-top: var(--tam-M);
+    margin-bottom: var(--tam-P);
+}
+
+#lista-produtos {
+    display: flex;
+}
+
+th, td {
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    padding: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: var(--tam-M);
+}
+
+.card-content {
+    min-height: calc(100% - 47px);
+}
+
+/* EU QUE FIZ 
+
+main ul {
+    display: flex;
+    margin-left: var(--tam-GG);
+}
+
+main img {
+    width: 100%;
+}
+
+section#section-produtos {
+    margin: var(--tam-M) var(--tam-GG);
+    padding: var(--tam-M) var(--tam-GG);
+}
+
+section li {
+    width: 200px;
+    list-style: none;
+    margin: var(--tam-P);
+    background-color: rgba(172, 172, 172, 0.342);
+} 
+
+*/
